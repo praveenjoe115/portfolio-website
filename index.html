@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praveen Kumar U - Software Engineer & AI Enthusiast building intelligent solutions">
+    <meta name="author" content="Praveen Kumar U">
+    <title>Praveen Kumar U | Software Engineer & AI Enthusiast</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- ============ CINEMATIC INTRO ============ -->
+    <div class="intro-overlay" id="intro-overlay">
+        <div class="intro-bg-grid"></div>
+        <canvas class="intro-particles" id="intro-particles"></canvas>
+        
+        <div class="intro-content">
+            <!-- Profile Image -->
+            <div class="intro-profile-wrapper" id="intro-profile">
+                <div class="intro-profile-glow"></div>
+                <div class="intro-profile-ring"></div>
+                <img src="assets/profile.png" alt="Praveen Kumar U" class="intro-profile-img" id="intro-img">
+                <div class="intro-profile-fallback" id="intro-fallback">PK</div>
+            </div>
+            
+            <!-- Name Container -->
+            <div class="intro-name-container" id="intro-name">
+                <div class="intro-pk" id="intro-pk">PK</div>
+                <div class="intro-full-name" id="intro-full-name">
+                    <span class="intro-letter">P</span>
+                    <span class="intro-letter">R</span>
+                    <span class="intro-letter">A</span>
+                    <span class="intro-letter">V</span>
+                    <span class="intro-letter">E</span>
+                    <span class="intro-letter">E</span>
+                    <span class="intro-letter">N</span>
+                    <span class="intro-letter intro-space">&nbsp;</span>
+                    <span class="intro-letter">K</span>
+                    <span class="intro-letter">U</span>
+                    <span class="intro-letter">M</span>
+                    <span class="intro-letter">A</span>
+                    <span class="intro-letter">R</span>
+                    <span class="intro-letter intro-space">&nbsp;</span>
+                    <span class="intro-letter">U</span>
+                </div>
+                <div class="intro-tagline" id="intro-tagline">
+                    <span class="intro-tagline-line"></span>
+                    <span>ASPRING SOFTWARE ENGINEER • AI ENTHUSIAST</span>
+                    <span class="intro-tagline-line"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ END INTRO ============ -->
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Mouse Light -->
+    <div class="mouse-light" id="mouse-light"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow-orb hero-glow-orb-1"></div>
+        <div class="hero-glow-orb hero-glow-orb-2"></div>
+        
+        <!-- Floating 3D Shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="availability-badge reveal">
+                    <span class="availability-dot"></span>
+                    <span>Open to Career Opportunities</span>
+                </div>
+
+                <div class="hero-greeting reveal">
+                    <span class="greeting-line"></span>
+                    <span>Hello, I'm</span>
+                </div>
+                
+                <h1 class="hero-name reveal" data-text="PRAVEEN KUMAR U">
+                    <span class="name-line gradient-text">PRAVEEN KUMAR U</span>
+                </h1>
+
+                <div class="hero-roles reveal">
+                    <div class="role-primary">AspiringSoftware Engineer</div>
+                    <div class="role-secondary">AI & Machine Learning Enthusiast</div>
+                </div>
+
+                <div class="hero-role reveal">
+                    <span class="role-prefix">I am a </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+
+                <p class="hero-description reveal">
+                    Building Intelligent Solutions Through Software & AI. Crafting scalable systems 
+                    at the intersection of <span class="highlight">machine learning</span> and 
+                    <span class="highlight">modern web technologies</span>.
+                </p>
+
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary magnetic">
+                        <span>View My Work</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="resume.pdf" download class="btn btn-ghost magnetic">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost magnetic">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <div class="stat-value" data-count="6" data-suffix="+">0</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="10" data-suffix="+">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="8.9" data-decimal="true">0</div>
+                        <div class="stat-label">CGPA Score</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-profile-container">
+                    <div class="hero-neon-ring"></div>
+                    <div class="hero-neon-ring ring-2"></div>
+                    <div class="hero-neon-ring ring-3"></div>
+                    <div class="hero-profile-glow"></div>
+                    <div class="hero-profile-wrapper" data-tilt>
+                        <img src="assets/profile.png" alt="Praveen Kumar U" class="hero-profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hero-profile-fallback">PK</div>
+                    </div>
+                    <div class="floating-particle particle-1"></div>
+                    <div class="floating-particle particle-2"></div>
+                    <div class="floating-particle particle-3"></div>
+                    <div class="floating-particle particle-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">01</div>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+            <div class="about-visual-new reveal">
+    <div class="about-image-box">
+        <img src="assets/profile.png" alt="Praveen Kumar U" class="about-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="about-img-fallback">PK</div>
+    </div>
+    
+    <div class="why-me-box">
+        <h3 class="why-me-heading">Why Me?</h3>
+        <ul class="why-me-list">
+            <li>
+                <span class="why-emoji">☕</span>
+                <span>Turning coffee into code since 2023.</span>
+            </li>
+            <li>
+                <span class="why-emoji">💻</span>
+                <span>I don't break software, I discover unexpected features.</span>
+            </li>
+            <li>
+                <span class="why-emoji">🐛</span>
+                <span>My bugs fear one thing: console.log()</span>
+            </li>
+            <li>
+                <span class="why-emoji">📚</span>
+                <span>My browser has more tabs open than my college notebook.</span>
+            </li>
+            <li>
+                <span class="why-emoji">🚀</span>
+                <span>Started with "Hello World", now building intelligent systems.</span>
+            </li>
+            <li>
+                <span class="why-emoji">🎯</span>
+                <span>Current mission: Build. Learn. Repeat.</span>
+            </li>
+        </ul>
+    </div>
+</div>
+                <div class="about-content reveal">
+                    <h3 class="about-subtitle">Passionate about building intelligent systems</h3>
+                    <p class="about-text">
+                        I'm a <strong>BCA Graduate</strong> (2023-2026, CGPA: 8.9) based in 
+                        <strong>Bangalore, Karnataka, India</strong>, specializing in 
+                        <strong>Software Engineering</strong> and 
+                        <strong>AI & Machine Learning</strong>. My passion lies in designing and 
+                        building scalable intelligent systems that bridge the gap between cutting-edge 
+                        AI research and practical, real-world applications.
+                    </p>
+                    <p class="about-text">
+                        With hands-on experience in <strong>Python, Java, Machine Learning, and modern 
+                        web technologies</strong>, I've developed multiple production-ready applications 
+                        including AI-powered platforms, computer vision systems, and full-stack web solutions.
+                    </p>
+                    <p class="about-text">
+                        <strong>Career Goal:</strong> Building impactful software solutions with AI and 
+                        preparing for <span class="highlight">software engineering opportunities</span> in 
+                        top product-based companies like Google, Microsoft, Amazon, Adobe, and Atlassian.
+                    </p>
+
+                    <div class="quick-facts-card">
+                        <h4>Quick Facts</h4>
+                        <div class="quick-facts-grid">
+                            <div class="quick-fact">
+                                <span class="fact-icon">🎓</span>
+                                <span class="fact-text">BCA Graduate (8.9 CGPA)</span>
+                            </div>
+                            <div class="quick-fact">
+                                <span class="fact-icon">📍</span>
+                                <span class="fact-text">Bangalore, Karnataka</span>
+                            </div>
+                            <div class="quick-fact">
+                                <span class="fact-icon">💼</span>
+                                <span class="fact-text">Software Engineer</span>
+                            </div>
+                            <div class="quick-fact">
+                                <span class="fact-icon">🤖</span>
+                                <span class="fact-text">AI & ML Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="resume.pdf" download class="btn btn-primary magnetic">
+                        <span>Download Resume</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">02</div>
+                <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">⚡</div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>Python</span></div>
+                        <div class="skill-chip"><span>Java</span></div>
+                        <div class="skill-chip"><span>C</span></div>
+                        <div class="skill-chip"><span>JavaScript</span></div>
+                        <div class="skill-chip"><span>SQL</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>HTML5</span></div>
+                        <div class="skill-chip"><span>CSS3</span></div>
+                        <div class="skill-chip"><span>JavaScript</span></div>
+                        <div class="skill-chip"><span>Flask</span></div>
+                        <div class="skill-chip"><span>REST APIs</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">🧠</div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>PyTorch</span></div>
+                        <div class="skill-chip"><span>TensorFlow</span></div>
+                        <div class="skill-chip"><span>OpenCV</span></div>
+                        <div class="skill-chip"><span>NumPy</span></div>
+                        <div class="skill-chip"><span>Scikit-Learn</span></div>
+                        <div class="skill-chip"><span>Deep Learning</span></div>
+                        <div class="skill-chip"><span>Computer Vision</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">🗄️</div>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>MySQL</span></div>
+                        <div class="skill-chip"><span>SQLite</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>Git</span></div>
+                        <div class="skill-chip"><span>GitHub</span></div>
+                        <div class="skill-chip"><span>VS Code</span></div>
+                        <div class="skill-chip"><span>Postman</span></div>
+                        <div class="skill-chip"><span>XAMPP</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">📚</div>
+                        <h3>CS Fundamentals</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>DSA</span></div>
+                        <div class="skill-chip"><span>Algorithms</span></div>
+                        <div class="skill-chip"><span>OOP</span></div>
+                        <div class="skill-chip"><span>DBMS</span></div>
+                        <div class="skill-chip"><span>OS</span></div>
+                        <div class="skill-chip"><span>CN</span></div>
+                        <div class="skill-chip"><span>Software Engineering</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">03</div>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A selection of my recent work</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                        <h3 class="project-title">HireSense AI Ultra</h3>
+                        <p class="project-description">
+                            AI-powered career development platform with resume analysis, mock interview coach, 
+                            roadmap generator, recruiter evaluation, authentication, and dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>SQLite</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/HireSense-AI-Ultra" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <h3 class="project-title">Pixel Truth</h3>
+                        <p class="project-description">
+                            AI-generated image detection system using deep learning and computer vision 
+                            to identify AI-generated images with high accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>PyTorch</span><span>OpenCV</span><span>MySQL</span><span>Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/pixel-truth" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">SaaS</span>
+                        </div>
+                        <h3 class="project-title">Aurora Meetings AI</h3>
+                        <p class="project-description">
+                            AI-powered meeting management platform with summaries, action tracking, 
+                            analytics, reports, and admin features.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>MySQL</span><span>AI Summarization</span><span>Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/Aurora-Meetings-AI" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <h3 class="project-title">CortexOps</h3>
+                        <p class="project-description">
+                            AI-powered incident response and root cause analysis platform for 
+                            automated alert triage and intelligent remediation workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span><span>AI</span><span>Incident Response</span><span>Monitoring</span><span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/CortexOps" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">05</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Weather</span>
+                        </div>
+                        <h3 class="project-title">StormIQ</h3>
+                        <p class="project-description">
+                            Intelligent weather monitoring platform with live forecasting, AI risk 
+                            prediction, maps, and analytics dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Weather API</span><span>Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/StormIQ" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">06</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI Productivity Analytics</span>
+                            <span class="tag">Productivity Optimization System</span>
+                        </div>
+                        <h3 class="project-title">LoopBreaker-AI</h3>
+                        <p class="project-description">
+                           AI-powered productivity intelligence platform that tracks user activity, detects repetitive workflows, analyzes productivity patterns, and provides smart automation suggestions to improve efficiency.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI Productivity Analytics</span><span>Productivity Optimization System</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/LoopBreaker-AI" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NEW PROJECT: NexTrip AI -->
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-glow"></div>
+                    <div class="project-status">Completed</div>
+                    <div class="project-number">07</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Travel</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                        <h3 class="project-title">NexTrip AI</h3>
+                        <p class="project-description">
+                            AI-powered travel planning platform that generates personalized itineraries using Generative AI.
+                            Integrated weather forecasting, budget planning, route optimization, travel analytics, and hidden-gem recommendations.
+                            Secure API integration with environment variables and Flask backend services.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>Gemini AI</span><span>OpenWeather API</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/praveenjoe115/NexTrip-AI" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- END NEW PROJECT -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ JOURNEY SECTION ============ -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">04</div>
+                <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Education, projects, and milestones</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 – 2026</div>
+                        <h3 class="timeline-title">Bachelor of Computer Applications</h3>
+                        <div class="timeline-company">BCA Graduate (CGPA: 8.9)</div>
+                        <p class="timeline-description">
+                            Built strong fundamentals in programming, database management, web development, 
+                            computer networks, operating systems, software engineering, and AI.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Computer Science</span>
+                            <span>Software Engineering</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">Pixel Truth Development</h3>
+                        <div class="timeline-company">AI Project</div>
+                        <p class="timeline-description">
+                            Developed an AI-generated image detection system using Deep Learning and 
+                            Computer Vision with PyTorch, OpenCV, and Flask.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">Aurora Meetings AI</h3>
+                        <div class="timeline-company">AI Platform</div>
+                        <p class="timeline-description">
+                            Built an intelligent meeting management platform with AI-powered summaries, 
+                            action item tracking, and analytics dashboard.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>AI/ML</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">CortexOps</h3>
+                        <div class="timeline-company">DevOps AI Platform</div>
+                        <p class="timeline-description">
+                            Developed an AI-powered incident response and monitoring platform that automates 
+                            alert triage and intelligent remediation workflows.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>AI/ML</span>
+                            <span>DevOps</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">StormIQ</h3>
+                        <div class="timeline-company">Analytics Platform</div>
+                        <p class="timeline-description">
+                            Built an intelligent weather forecasting and analytics platform with real-time 
+                            data visualization and predictive modeling.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Analytics</span>
+                            <span>Weather API</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">HireSense AI Ultra</h3>
+                        <div class="timeline-company">AI Career Platform</div>
+                        <p class="timeline-description">
+                            Built an AI-powered career development platform with resume analysis, 
+                            interview coach, career roadmap, and recruiter evaluation system.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>AI/ML</span>
+                            <span>Full Stack</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">NexTrip AI</h3>
+                        <div class="timeline-company">AI Travel Platform</div>
+                        <p class="timeline-description">
+                            Developed an intelligent travel assistant that generates personalized itineraries using Generative AI,
+                            with weather forecasting, budget planning, route optimization, travel analytics, and hidden-gem recommendations.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>AI/ML</span>
+                            <span>Flask</span>
+                            <span>Gemini AI</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">LoopBreaker-AI</h3>
+                        <div class="timeline-company">AI Travel Platform</div>
+                        <p class="timeline-description">
+                            Smart productivity analytics platform that identifies repetitive tasks and generates AI-powered workflow optimization suggestions.
+                            <span>HTML5</span>
+                            <span>Flask</span>
+                            <span>python</span>
+                            <span>SQlite3</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+               
+               
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Future</div>
+                        <h3 class="timeline-title">Preparing for Product-Based Companies</h3>
+                        <div class="timeline-company">Career Preparation</div>
+                        <p class="timeline-description">
+                            Focused on Software Engineering roles, DSA, AI/ML, GitHub portfolio building, 
+                            and product-company preparation for top tech companies.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>DSA</span>
+                            <span>Problem Solving</span>
+                            <span>Interview Prep</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS SECTION ============ -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">05</div>
+                <h2 class="section-title"><span class="gradient-text">🏆</span> Achievements</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Recognition and milestones in my journey</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Multiple Prize Winner</h3>
+                    <p>Inter-College IT Fest Competitions</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🥇</div>
+                    <h3>1st Place</h3>
+                    <p>Indian Constitution Quiz Competition</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🤖</div>
+                    <h3>Built Pixel Truth</h3>
+                    <p>AI Generated Image Detection System</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">💻</div>
+                    <h3>Multiple AI Projects</h3>
+                    <p>Developed AI & Software Engineering Projects</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">📜</div>
+                    <h3>AI Certifications</h3>
+                    <p>Completed AI & Technology Certifications</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>End-to-End Applications</h3>
+                    <p>Built Portfolio, AI and Web Applications</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🎯</div>
+                    <h3>Software Engineering Prep</h3>
+                    <p>Actively Preparing for Software Engineering Roles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS SECTION ============ -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">06</div>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Professional certifications and continuous learning</p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="certification-card reveal">
+                    <div class="cert-badge">🤖</div>
+                    <h3>Introduction to Responsible AI</h3>
+                    <div class="cert-provider">Google Cloud</div>
+                    <div class="cert-skills">
+                        <span class="cert-skill">Ethics in AI</span>
+                        <span class="cert-skill">Fairness</span>
+                        <span class="cert-skill">Transparency</span>
+                    </div>
+                    <div class="cert-date">Completed: 2024</div>
+                    <div class="cert-status">✓ Verified</div>
+                </div>
+                <div class="certification-card reveal">
+                    <div class="cert-badge">🧠</div>
+                    <h3>AI for Beginners</h3>
+                    <div class="cert-provider">Microsoft</div>
+                    <div class="cert-skills">
+                        <span class="cert-skill">Machine Learning</span>
+                        <span class="cert-skill">Neural Networks</span>
+                        <span class="cert-skill">AI Basics</span>
+                    </div>
+                    <div class="cert-date">Completed: 2024</div>
+                    <div class="cert-status">✓ Verified</div>
+                </div>
+                <div class="certification-card reveal">
+                    <div class="cert-badge">💭</div>
+                    <h3>Critical Thinking in the AI Era</h3>
+                    <div class="cert-provider">Online Learning</div>
+                    <div class="cert-skills">
+                        <span class="cert-skill">Analytical Thinking</span>
+                        <span class="cert-skill">Problem Solving</span>
+                        <span class="cert-skill">AI Evaluation</span>
+                    </div>
+                    <div class="cert-date">Completed: 2024</div>
+                    <div class="cert-status">✓ Verified</div>
+                </div>
+                <div class="certification-card reveal">
+                    <div class="cert-badge">🎓</div>
+                    <h3>Introduction to Artificial Intelligence</h3>
+                    <div class="cert-provider">IBM / Online Platform</div>
+                    <div class="cert-skills">
+                        <span class="cert-skill">AI Fundamentals</span>
+                        <span class="cert-skill">Applications</span>
+                        <span class="cert-skill">AI Concepts</span>
+                    </div>
+                    <div class="cert-date">Completed: 2024</div>
+                    <div class="cert-status">✓ Verified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GITHUB SECTION ============ -->
+    <section class="section github" id="github">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">07</div>
+                <h2 class="section-title">GitHub <span class="gradient-text">Highlights</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">My open source journey and contributions</p>
+            </div>
+
+            <div class="github-grid reveal">
+                <div class="github-card github-card-main">
+                    <div class="github-card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <div class="github-card-label">GitHub Username</div>
+                    <div class="github-card-value gradient-text">@praveenjoe115</div>
+                </div>
+
+                <div class="github-card">
+                    <div class="github-card-icon">📦</div>
+                    <div class="github-card-label">Public Projects</div>
+                    <div class="github-card-value">6+</div>
+                </div>
+
+                <div class="github-card">
+                    <div class="github-card-icon">🤖</div>
+                    <div class="github-card-label">AI Projects</div>
+                    <div class="github-card-value">4+</div>
+                </div>
+
+                <div class="github-card">
+                    <div class="github-card-icon">🛠️</div>
+                    <div class="github-card-label">Technologies Used</div>
+                    <div class="github-card-value">10+</div>
+                </div>
+            </div>
+
+            <div class="github-repos reveal">
+                <h3 class="github-repos-title">Featured Repositories</h3>
+                <div class="github-repos-list">
+                    <a href="https://github.com/praveenjoe115/HireSense-AI-Ultra" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">⚡</span>
+                        <span class="repo-name">HireSense AI Ultra</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/praveenjoe115/pixel-truth" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">🎯</span>
+                        <span class="repo-name">Pixel Truth</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/praveenjoe115/Aurora-Meetings-AI" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">🌌</span>
+                        <span class="repo-name">Aurora Meetings AI</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/praveenjoe115/CortexOps" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">🧠</span>
+                        <span class="repo-name">CortexOps</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/praveenjoe115/StormIQ" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">⛈️</span>
+                        <span class="repo-name">StormIQ</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/praveenjoe115/NexTrip-AI" target="_blank" class="github-repo-item">
+                        <span class="repo-icon">✈️</span>
+                        <span class="repo-name">NexTrip AI</span>
+                        <span class="repo-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="github-cta reveal">
+                <a href="https://github.com/praveenjoe115" target="_blank" class="btn btn-primary btn-lg magnetic">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View GitHub Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">08</div>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Open to opportunities at top product companies</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-heading">Get in touch</h3>
+                    <p class="contact-text">
+                        I'm actively seeking <strong>Software Engineer</strong> roles at top product-based 
+                        companies. Whether you have an opportunity, a question, or just want to say hi — 
+                        my inbox is always open.
+                    </p>
+
+                    <div class="contact-links">
+                        <div class="contact-link-item magnetic">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value" id="email-text">praveen20211202@gmail.com</div>
+                            </div>
+                            <button class="copy-email-btn" id="copy-email" title="Copy email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                        </div>
+
+                        <a href="mailto:praveen20211202@gmail.com" class="contact-link-item magnetic">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Direct Email</div>
+                                <div class="contact-value">Send Message</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/praveen-kumar-0a731a417" target="_blank" class="contact-link-item magnetic">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">Connect on LinkedIn</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/praveenjoe115" target="_blank" class="contact-link-item magnetic">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">View My Code</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-link-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Bangalore, Karnataka, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Your Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" class="form-input" rows="5" required></textarea>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/praveenjoe115" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/praveen-kumar-0a731a417" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:praveen20211202@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Praveen Kumar U. All rights reserved.</p>
+                <p class="footer-made">Crafted with passion & code for Software Engineering Opportunities</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toast-message">Email copied to clipboard!</span>
+        </div>
+    </div>
+
+    <!-- ============ AI CHATBOT ============ -->
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+        <span class="chatbot-icon">🤖</span>
+        <span class="chatbot-pulse"></span>
+    </button>
+
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-header-left">
+                <div class="chatbot-avatar">
+                    <span>🤖</span>
+                    <span class="chatbot-status-dot"></span>
+                </div>
+                <div class="chatbot-info">
+                    <div class="chatbot-name">Ask Praveen AI</div>
+                    <div class="chatbot-status">Online • AI Assistant</div>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-message ai-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-bubble">
+                    <p>Hey there! 👋 I'm <strong>Ask Praveen AI</strong>, your personal assistant to learn about Praveen.</p>
+                    <p>Try asking me:</p>
+                    <div class="quick-questions">
+                        <button class="quick-question" data-question="Who is Praveen?">Who is Praveen?</button>
+                        <button class="quick-question" data-question="What are his skills?">What are his skills?</button>
+                        <button class="quick-question" data-question="What projects has he built?">What projects has he built?</button>
+                        <button class="quick-question" data-question="What certifications has he completed?">What certifications?</button>
+                        <button class="quick-question" data-question="What is his education?">What is his education?</button>
+                        <button class="quick-question" data-question="How can I contact him?">How can I contact him?</button>
+                        <button class="quick-question" data-question="Show GitHub">Show GitHub</button>
+                        <button class="quick-question" data-question="Show LinkedIn">Show LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Ask me anything about Praveen..." autocomplete="off">
+            <button class="chatbot-send" id="chatbot-send" aria-label="Send message">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- ============ END AI CHATBOT ============ -->
+
+    <script src="script.js"></script>
+</body>
+</html>
